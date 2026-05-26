@@ -2,6 +2,7 @@
   "name": "@buildmoney/database",
   "version": "0.0.1",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -11,9 +12,9 @@
     "db:logs": "docker compose -f infra/docker-compose.yml logs -f postgres"
   },
   "dependencies": {
-    "@prisma/client": "^6.0.0"
+    "@prisma/client": "^6.19.3"
   },
   "devDependencies": {
-    "prisma": "^6.0.0"
+    "prisma": "^6.19.3"
   }
 }

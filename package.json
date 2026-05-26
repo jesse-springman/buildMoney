@@ -34,5 +34,13 @@
   "packageManager": "npm@10.8.2",
   "dependencies": {
     "dotenv": "^17.4.2"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "prettier --write"
+    ],
+    "**/*.{json,md,yml}": [
+      "prettier --write"
+    ]
   }
 }
